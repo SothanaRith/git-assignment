@@ -10,6 +10,7 @@ function App() {
     setValue(value + num);
   };
 
+
   const handleOperator = (op) => {
     setStoredValue(Number(value));
     setOperator(op);
