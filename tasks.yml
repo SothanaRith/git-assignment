@@ -1,0 +1,6 @@
+- name: cleanup
+  steps:
+    - name: cleanup-workspace
+      image: alpine
+      script: |
+        rm -rf /workspace/*
