@@ -1,6 +1,7 @@
-- name: cleanup
+- name: run-tests
   steps:
-    - name: cleanup-workspace
-      image: alpine
+    - name: nose-test
+      image: python:3.9
       script: |
-        rm -rf /workspace/*
+        pip install nose
+        nosetests
